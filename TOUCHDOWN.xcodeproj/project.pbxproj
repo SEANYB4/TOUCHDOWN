@@ -11,6 +11,14 @@
 		14EC21F5273982BF000D27EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC21F4273982BF000D27EB /* ContentView.swift */; };
 		14EC21F7273982C0000D27EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14EC21F6273982C0000D27EB /* Assets.xcassets */; };
 		14EC21FA273982C0000D27EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14EC21F9273982C0000D27EB /* Preview Assets.xcassets */; };
+		14EC22052739835F000D27EB /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = 14EC22012739835F000D27EB /* player.json */; };
+		14EC22062739835F000D27EB /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = 14EC22022739835F000D27EB /* category.json */; };
+		14EC22072739835F000D27EB /* brand.json in Resources */ = {isa = PBXBuildFile; fileRef = 14EC22032739835F000D27EB /* brand.json */; };
+		14EC22082739835F000D27EB /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 14EC22042739835F000D27EB /* product.json */; };
+		14EC2212273984C1000D27EB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC2211273984C1000D27EB /* Constant.swift */; };
+		14EC2214273985B8000D27EB /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC2213273985B8000D27EB /* FooterView.swift */; };
+		14EC221627398B3F000D27EB /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC221527398B3F000D27EB /* NavigationBarView.swift */; };
+		14EC221827398CB2000D27EB /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC221727398CB2000D27EB /* LogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,15 @@
 		14EC21F4273982BF000D27EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14EC21F6273982C0000D27EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14EC21F9273982C0000D27EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14EC22012739835F000D27EB /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
+		14EC22022739835F000D27EB /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
+		14EC22032739835F000D27EB /* brand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brand.json; sourceTree = "<group>"; };
+		14EC22042739835F000D27EB /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
+		14EC2209273983E7000D27EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		14EC2211273984C1000D27EB /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		14EC2213273985B8000D27EB /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		14EC221527398B3F000D27EB /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		14EC221727398CB2000D27EB /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +68,13 @@
 		14EC21F1273982BF000D27EB /* TOUCHDOWN */ = {
 			isa = PBXGroup;
 			children = (
-				14EC21F2273982BF000D27EB /* TOUCHDOWNApp.swift */,
-				14EC21F4273982BF000D27EB /* ContentView.swift */,
+				14EC2210273984AD000D27EB /* Utility */,
+				14EC220F2739849B000D27EB /* Extension */,
+				14EC220E27398494000D27EB /* Model */,
+				14EC220A2739844D000D27EB /* View */,
+				14EC2209273983E7000D27EB /* Info.plist */,
+				14EC220027398347000D27EB /* Data */,
+				14EC220B27398470000D27EB /* App */,
 				14EC21F6273982C0000D27EB /* Assets.xcassets */,
 				14EC21F8273982C0000D27EB /* Preview Content */,
 			);
@@ -65,6 +87,74 @@
 				14EC21F9273982C0000D27EB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14EC220027398347000D27EB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				14EC22032739835F000D27EB /* brand.json */,
+				14EC22022739835F000D27EB /* category.json */,
+				14EC22012739835F000D27EB /* player.json */,
+				14EC22042739835F000D27EB /* product.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		14EC220A2739844D000D27EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14EC220C27398478000D27EB /* Home */,
+				14EC220D27398481000D27EB /* Detail */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14EC220B27398470000D27EB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				14EC21F2273982BF000D27EB /* TOUCHDOWNApp.swift */,
+				14EC21F4273982BF000D27EB /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		14EC220C27398478000D27EB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				14EC2213273985B8000D27EB /* FooterView.swift */,
+				14EC221527398B3F000D27EB /* NavigationBarView.swift */,
+				14EC221727398CB2000D27EB /* LogoView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		14EC220D27398481000D27EB /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		14EC220E27398494000D27EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14EC220F2739849B000D27EB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		14EC2210273984AD000D27EB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				14EC2211273984C1000D27EB /* Constant.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +215,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14EC22052739835F000D27EB /* player.json in Resources */,
+				14EC22072739835F000D27EB /* brand.json in Resources */,
 				14EC21FA273982C0000D27EB /* Preview Assets.xcassets in Resources */,
 				14EC21F7273982C0000D27EB /* Assets.xcassets in Resources */,
+				14EC22062739835F000D27EB /* category.json in Resources */,
+				14EC22082739835F000D27EB /* product.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +232,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				14EC21F5273982BF000D27EB /* ContentView.swift in Sources */,
+				14EC221827398CB2000D27EB /* LogoView.swift in Sources */,
+				14EC2214273985B8000D27EB /* FooterView.swift in Sources */,
 				14EC21F3273982BF000D27EB /* TOUCHDOWNApp.swift in Sources */,
+				14EC2212273984C1000D27EB /* Constant.swift in Sources */,
+				14EC221627398B3F000D27EB /* NavigationBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,11 +370,13 @@
 				DEVELOPMENT_TEAM = 34Y439LF9F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TOUCHDOWN/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,11 +402,13 @@
 				DEVELOPMENT_TEAM = 34Y439LF9F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TOUCHDOWN/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
