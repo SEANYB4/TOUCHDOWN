@@ -42,28 +42,58 @@ struct ProductDetailView: View {
             
             TopPartDetailView()
                 .padding(.horizontal)
+                .zIndex(1)
             
             
             // DETAIL BOTTOM PART
             
+            VStack(alignment: .center, spacing: 0, content: {
+                
+                
+                // RATINGS + SIZES
+                RatingsSizesDetailView()
+                    .padding(.top, -20)
+                    .padding(.bottom, 10)
+                
+                
+                // DESCRIPTION
+                ScrollView(.vertical, showsIndicators: false, content: {
+                    
+                    Text(sampleProduct.description)
+                        .font(.system(.body, design: .rounded))
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.leading)
+                    
+                    
+                    
+                    
+                }) //: SCROLL
+                
+                
+                // QUANTITY + FAVORITES
+                
+                QuantityFavoriteDetailView()
+                    .padding(.vertical, 10)
+                
+                
+                // ADD TO CART
+                
+                AddToCartDetailView()
+                    .padding(.bottom, 20)
+            }) //: VSTACK
+                .padding(.horizontal)
+                .background(
+                    Color.white
+                        .clipShape(CustomShape())
+                        .padding(.top, -105)
+                
+        
             
-            
-            // RATINGS + SIZES
-            
-            
-            // DESCRIPTION
-            
-            
-            
-            // QUANTITY + FAVORITES
-            
-            
-            // ADD TO CART
-            
-            Spacer()
+            )
             
             
         }) //:VSTACK
+            .zIndex(0)
             .ignoresSafeArea(.all, edges: .all)
             .background(
                 Color(red: sampleProduct.red,
